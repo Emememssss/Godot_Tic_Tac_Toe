@@ -1,0 +1,237 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MainScene.gd" type="Script" id=1]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="PlayerScores" type="Node2D" parent="."]
+
+[node name="scores_lbl" type="Label" parent="PlayerScores"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 56.0
+margin_bottom = 30.0
+text = "Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player1_lbl" type="Label" parent="PlayerScores"]
+margin_left = 16.0
+margin_top = 40.0
+margin_right = 130.0
+margin_bottom = 54.0
+text = "Player 1 (X) Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player2_lbl" type="Label" parent="PlayerScores"]
+margin_left = 16.0
+margin_top = 56.0
+margin_right = 133.0
+margin_bottom = 70.0
+text = "Player 2 (O) Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player1_score_lbl" type="Label" parent="PlayerScores"]
+margin_left = 144.0
+margin_top = 40.0
+margin_right = 184.0
+margin_bottom = 54.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player2_score_lbl" type="Label" parent="PlayerScores"]
+margin_left = 144.0
+margin_top = 56.0
+margin_right = 176.0
+margin_bottom = 70.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Board" type="Node2D" parent="."]
+
+[node name="cell_11_btn" type="Button" parent="Board"]
+margin_left = 30.0
+margin_top = 152.0
+margin_right = 86.0
+margin_bottom = 208.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_12_btn" type="Button" parent="Board"]
+margin_left = 126.0
+margin_top = 152.0
+margin_right = 182.0
+margin_bottom = 208.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_13_btn" type="Button" parent="Board"]
+margin_left = 222.0
+margin_top = 152.0
+margin_right = 278.0
+margin_bottom = 208.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_21_btn" type="Button" parent="Board"]
+margin_left = 30.0
+margin_top = 256.0
+margin_right = 86.0
+margin_bottom = 312.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_22_btn" type="Button" parent="Board"]
+margin_left = 126.0
+margin_top = 256.0
+margin_right = 182.0
+margin_bottom = 312.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_23_btn" type="Button" parent="Board"]
+margin_left = 222.0
+margin_top = 256.0
+margin_right = 278.0
+margin_bottom = 312.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_31_btn" type="Button" parent="Board"]
+margin_left = 30.0
+margin_top = 360.0
+margin_right = 86.0
+margin_bottom = 416.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_32_btn" type="Button" parent="Board"]
+margin_left = 126.0
+margin_top = 360.0
+margin_right = 182.0
+margin_bottom = 416.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cell_33_btn" type="Button" parent="Board"]
+margin_left = 222.0
+margin_top = 360.0
+margin_right = 278.0
+margin_bottom = 416.0
+rect_pivot_offset = Vector2( -240, -112 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="game_tracker" type="Node2D" parent="."]
+
+[node name="game_num_title" type="Label" parent="game_tracker"]
+margin_left = 216.0
+margin_top = 24.0
+margin_right = 256.0
+margin_bottom = 38.0
+text = "Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="game_num_value" type="Label" parent="game_tracker"]
+margin_left = 264.0
+margin_top = 24.0
+margin_right = 280.0
+margin_bottom = 38.0
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOver" type="Node2D" parent="."]
+visible = false
+
+[node name="gameOver_lbl" type="Label" parent="GameOver"]
+margin_left = 120.0
+margin_top = 152.0
+margin_right = 197.0
+margin_bottom = 166.0
+text = "Game Over!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="winner_lbl" type="Label" parent="GameOver"]
+margin_left = 80.0
+margin_top = 184.0
+margin_right = 232.0
+margin_bottom = 198.0
+text = "Player X/O Wins! / Draw"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playAgan_lbl" type="Label" parent="GameOver"]
+margin_left = 128.0
+margin_top = 240.0
+margin_right = 197.0
+margin_bottom = 254.0
+text = "Play again?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="yes_btn" type="Button" parent="GameOver"]
+margin_left = 80.0
+margin_top = 296.0
+margin_right = 144.0
+margin_bottom = 332.0
+text = "Yes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no_btn" type="Button" parent="GameOver"]
+margin_left = 176.0
+margin_top = 296.0
+margin_right = 240.0
+margin_bottom = 332.0
+text = "No"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Board/cell_11_btn" to="." method="_on_cell_11_btn_pressed"]
+[connection signal="pressed" from="Board/cell_12_btn" to="." method="_on_cell_12_btn_pressed"]
+[connection signal="pressed" from="Board/cell_13_btn" to="." method="_on_cell_13_btn_pressed"]
+[connection signal="pressed" from="Board/cell_21_btn" to="." method="_on_cell_21_btn_pressed"]
+[connection signal="pressed" from="Board/cell_22_btn" to="." method="_on_cell_22_btn_pressed"]
+[connection signal="pressed" from="Board/cell_23_btn" to="." method="_on_cell_23_btn_pressed"]
+[connection signal="pressed" from="Board/cell_31_btn" to="." method="_on_cell_31_btn_pressed"]
+[connection signal="pressed" from="Board/cell_32_btn" to="." method="_on_cell_32_btn_pressed"]
+[connection signal="pressed" from="Board/cell_33_btn" to="." method="_on_cell_33_btn_pressed"]
+[connection signal="pressed" from="GameOver/yes_btn" to="." method="_on_yes_btn_pressed"]
+[connection signal="pressed" from="GameOver/no_btn" to="." method="_on_no_btn_pressed"]
